@@ -23,9 +23,9 @@ class PostsController < ApplicationController
   def popular
     @posts = Post.by_popularity.page params[:page]
 
-    respond_to do |format|
-      format.html { render :index }
-    end
+    # respond_to do |format|
+    #   format.html { render :index }
+    # end
   end
 
   # GET /posts

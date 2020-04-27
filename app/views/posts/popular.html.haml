@@ -1,0 +1,5 @@
+.posts
+  = render @posts
+
+.pagination
+  = link_to_next_page(@posts, 'Next Page', remote: true)
