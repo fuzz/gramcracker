@@ -7,7 +7,7 @@
 %p
   = button_to 'Like', like_post_path(post)
 %p
-  = post.likes.count
+  %b= post.likes.count
   likes
 
 %hr
