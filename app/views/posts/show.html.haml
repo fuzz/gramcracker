@@ -1,22 +1,24 @@
 %p#notice= notice
 
-%p
-  = "@" + @post.user.username
-%p
-  = image_tag @post.image.variant(resize_to_limit: [400, 400])
-%p
-  = button_to 'Like', like_post_path(@post)
-%p
-  %b= @post.likes.count
-  likes
-%p
-  = @post.description
-%p
-  %b Join the Gramcracker email list here for lots of win!
-  = simple_form_for(@post, method: :post, url: email_post_path) do |f|
+.card.mb3{:style => "max-width: 420px;"}
+  .card-body
+    %p
+      = "@" + @post.user.username
+    %p
+      = image_tag @post.image.variant(resize_to_limit: [400, 400])
+    %p
+      = button_to 'Like', like_post_path(@post)
+    %p
+      %b= @post.likes.count
+      likes
+    %p
+      = @post.description
+    %p
+      %b Join the Gramcracker email list here for lots of win!
+      = simple_form_for(@post, method: :post, url: email_post_path) do |f|
 
-    .form-inputs
-      = f.input :email, label: false
+        .form-inputs
+          = f.input :email, label: false
 
-    .form-actions
-      = f.submit 'Submit'
+        .form-actions
+          = f.submit 'Submit'
