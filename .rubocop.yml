@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'node_modules/**/*'
+Metrics/AbcSize:
+  Exclude:
+    - 'app/controllers/**/*'
+Metrics/MethodLength:
+  Exclude:
+    - 'app/controllers/**/*'

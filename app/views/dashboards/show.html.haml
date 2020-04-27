@@ -1,0 +1,18 @@
+%h1 Dashboard
+
+%table
+  %thead
+    %tr
+      %th User
+      %th Likes
+      %th Signups
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= "@" + user.username
+        %td= user.likes.count
+        %td= user.email_signups.count
+
+%p
+  = paginate @users

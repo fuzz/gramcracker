@@ -1,0 +1,13 @@
+%nav.navbar.navbar-expand-md.navbar-light.bg-light
+  .container
+    %a.navbar-brand{href: "/"} GRAMCRACKER
+    %button.navbar-toggler{"aria-controls" => "navbarsExampleDefault", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarsExampleDefault", "data-toggle" => "collapse", type: "button"}
+      %span.navbar-toggler-icon
+    #navbarsExampleDefault.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item
+          %a.nav-link{href: "/posts"} POSTS
+        %li.nav-item
+          %a.nav-link{href: "/posts/popular"} POPULAR
+        %li.nav-item
+          %a.nav-link{href: "/dashboard"} DASHBOARD

@@ -1,0 +1,7 @@
+= link_to 'New Post', new_post_path
+
+.posts
+  = render @posts
+
+.pagination
+  = link_to_next_page(@posts, 'Next Page', remote: true)

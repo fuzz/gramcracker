@@ -1,0 +1,104 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=c2591e63-c6bd-4880-bd45-9d365334a597&fontids=5121261,5313918,5320007,5343442,5348221,5357894");
+
+@font-face{
+    font-family:"Bodoni Twelve ITC W05 Bold";
+    src:font-url("5121261/b65a3285-a304-4cfc-ba8f-3c7635961c3b.eot?#iefix");
+    src:font-url("5121261/b65a3285-a304-4cfc-ba8f-3c7635961c3b.eot?#iefix") format("eot"),font-url("5121261/1da601d8-fa26-47a0-b4d8-250efe083571.woff2") format("woff2"),font-url("5121261/7c0bd1d7-fa6a-4870-b3d2-5b69f2a9ef0c.woff") format("woff"),font-url("5121261/a6722e12-3e86-4e9d-83fa-798181ecd2b2.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Bergsland Display W05 Regular";
+    src:font-url("5203048/fb4ac31b-fbd8-4560-85e0-b9dc15f2e63c.eot?#iefix");
+    src:font-url("5203048/fb4ac31b-fbd8-4560-85e0-b9dc15f2e63c.eot?#iefix") format("eot"),font-url("5203048/2299f81a-c6d7-45cc-aac3-550eddae9bef.woff2") format("woff2"),font-url("5203048/f157fea3-e2ba-4089-8ca4-830e940d4987.woff") format("woff"),font-url("5203048/4e889171-bf58-4625-a931-72d85c2e081f.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Futura LT W05 Book";
+    src:font-url("5313918/a411c21e-f439-48c1-bddb-887ec08b5224.eot?#iefix");
+    src:font-url("5313918/a411c21e-f439-48c1-bddb-887ec08b5224.eot?#iefix") format("eot"),font-url("5313918/7a337894-f253-4a5d-a63e-0d8275cedec5.woff2") format("woff2"),font-url("5313918/55e6a203-1f50-4971-89d0-17ca0150f29d.woff") format("woff"),font-url("5313918/feaf9b77-0958-45fa-96c3-1afc445987ef.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Bodoni Twelve ITC W05 Bold It";
+    src:font-url("5320007/59fa9a16-74e7-4450-8e17-024bbe7dcd9c.eot?#iefix");
+    src:font-url("5320007/59fa9a16-74e7-4450-8e17-024bbe7dcd9c.eot?#iefix") format("eot"),font-url("5320007/efbb3646-caac-41db-a79c-f5eeede10ff8.woff2") format("woff2"),font-url("5320007/41ba5d95-dc2e-46ce-b6b3-df69121f0d02.woff") format("woff"),font-url("5320007/8336550c-1425-4dab-a6b5-4b1c8279e64b.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Bodoni Twelve ITC W05 Book It";
+    src:font-url("5343442/076467ce-7dc7-44f3-bb80-32def82bcf37.eot?#iefix");
+    src:font-url("5343442/076467ce-7dc7-44f3-bb80-32def82bcf37.eot?#iefix") format("eot"),font-url("5343442/4387622a-26cb-47ab-ba5e-398e7af23076.woff2") format("woff2"),font-url("5343442/87f2ebbb-daf3-4fa3-b74f-84513cacc1ce.woff") format("woff"),font-url("5343442/75ddea74-a7c8-4be7-99e2-7d540ea59940.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Bodoni Svntytwo ITC W05 Book";
+    src:font-url("5348221/274642e4-3d08-4e90-be38-87138ae94ef8.eot?#iefix");
+    src:font-url("5348221/274642e4-3d08-4e90-be38-87138ae94ef8.eot?#iefix") format("eot"),font-url("5348221/561a3d39-d2b8-4f64-a61c-9920d8728973.woff2") format("woff2"),font-url("5348221/215e5d4e-e92c-4185-9012-307dceeeec2d.woff") format("woff"),font-url("5348221/7c0a971e-204a-4554-b712-6fdce604bb72.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Bodoni Twelve ITC W05 Book";
+    src:font-url("5357894/27b9416a-0e4a-4295-bad3-b285d1ea1265.eot?#iefix");
+    src:font-url("5357894/27b9416a-0e4a-4295-bad3-b285d1ea1265.eot?#iefix") format("eot"),font-url("5357894/94248fe8-80c4-4c46-ad5a-bce8f852b380.woff2") format("woff2"),font-url("5357894/d27f8430-b23d-404a-959e-c1b770801b56.woff") format("woff"),font-url("5357894/5fd0ae59-8865-48f0-974f-440e647dc33e.ttf") format("truetype");
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color:#f5f5f5 !important;
+  margin-bottom: 50px;
+  padding-top: 5rem;
+}
+
+h1 {
+    font-family: "Bodoni Svntytwo ITC W05 Book" !important;
+    font-size: 2em;
+}
+h2, h3, h4, h5, h6 {
+    font-family: "Bodoni Svntytwo ITC W05 Book" !important;
+    font-size: 1.6em;
+}
+li {
+    font-family: "Futura LT W05 Book" !important;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Set the fixed height of the footer here */
+    line-height: 40px; /* Vertically center the text there */
+    background-color:#bdbdbd !important;
+    font-family: "Futura LT W05 Book" !important;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.navbar {
+    // background-color:#3d3d3d !important;
+    background-color:#bdbdbd !important;
+    position: relative;
+    top: -84px;
+}
+.navbar-brand {
+    // color: whitesmoke !important;
+    font-family: "Futura LT W05 Book" !important;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+div {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding-left: 5px !important;
+      padding-right: 3px !important;
+}
+p {
+    font-family: "Bodoni Twelve ITC W05 Book" !important;
+    font-size: 1.3em;
+}
+
+.yield-container {
+  position: relative;
+  top: -50px;
+  text-align: left;
+}

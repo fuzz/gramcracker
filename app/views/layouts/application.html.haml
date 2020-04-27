@@ -1,0 +1,24 @@
+!!!
+%html{lang: "en"}
+  %head
+    = csrf_meta_tags
+    = csp_meta_tag
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1, shrink-to-fit=no", name: "viewport"}/
+    %meta{content: "", name: "Gramcracker"}/
+    %link{href: "../../../../favicon.ico", rel: "icon"}/
+    %title Gramcracker
+    %link{href: "/assets/application.css", rel: "stylesheet"}/
+  %body
+    = render "layouts/navbar"
+    .container
+      .yield-container
+        = yield
+    %footer.footer
+      .container
+        %span
+          COPYRIGHT &#169;
+          = CURRENT_YEAR
+          GRAMCRACKER, INC
+    = javascript_include_tag "application"

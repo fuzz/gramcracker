@@ -1,0 +1,13 @@
+%p
+  = "@" + post.user.username
+%p
+  = link_to image_tag(post.image.variant(resize_to_limit: [400, 400])), post_path(post)
+%p
+  = post.description
+%p
+  = button_to 'Like', like_post_path(post)
+%p
+  = post.likes.count
+  likes
+
+%hr
