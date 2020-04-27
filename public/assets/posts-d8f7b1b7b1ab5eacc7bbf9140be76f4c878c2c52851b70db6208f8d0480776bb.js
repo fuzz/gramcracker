@@ -1,0 +1,1 @@
+(function(){$(function(){return $(".pagination").infinitePages({debug:!0,loading:function(){return $(this).text("Loading next page...")},error:function(){return $(this).button("There was an error, please try again")}})})}).call(this);
