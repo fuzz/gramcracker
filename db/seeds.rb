@@ -9,11 +9,11 @@ require 'down/http'
 require 'faker'
 require 'openssl'
 
-# 1.upto(1000) do
-#   fakey = Faker::Name.unique.first_name
+1.upto(1000) do
+  fakey = Faker::Name.unique.first_name
 
-#   User.create(email: fakey + "@example.com", username: fakey, password: "badpassword" )
-# end
+  User.create(email: fakey + "@example.com", username: fakey, password: "badpassword" )
+end
 
 1.upto(1000) do
   tempfile = Down.download(Faker::LoremFlickr.image(size: "400x400"))
