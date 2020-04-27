@@ -1,6 +1,5 @@
-GIT
-  remote: https://github.com/cowcross/jquery-infinite-pages.git
-  revision: 2ad7b526fff2ddd3f9a4ec05dd503272b4b3befa
+PATH
+  remote: lib/gem/jquery-infinite-pages
   specs:
     jquery-infinite-pages (0.2.3)
       coffee-script
