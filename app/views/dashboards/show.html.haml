@@ -15,4 +15,4 @@
         %td= user.email_signups.count
 
 %p
-  = paginate @users
+  = link_to_next_page(@users, 'Next Page')
