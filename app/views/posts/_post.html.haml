@@ -1,11 +1,10 @@
-%p
-  = "@" + post.user.username
-%p
-  = link_to image_tag(post.image.variant(resize_to_limit: [400, 400])), post_path(post)
-%p
-  = post.description
-%p
-  = button_to 'Like', like_post_path(post)
-%p
-  %b= post.likes.count
-  likes
+.card.mb3{:style => "max-width: 500px;"}
+  .card-body
+    = link_to image_tag(post.image.variant(resize_to_limit: [400, 400]), :class => "card-img-top"), post_path(post)
+    %p.card-text
+      = post.description
+    %p
+      = button_to 'Like', like_post_path(post)
+    %p
+      %b= post.likes.count
+      likes
